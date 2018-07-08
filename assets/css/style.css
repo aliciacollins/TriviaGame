@@ -1,0 +1,46 @@
+body { 
+ 
+    background-image: url("background3.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+#box {
+    box-sizing: content-box;
+    margin:50px 100px 50px 100px;
+    size: auto;
+    background-color: rgb(218, 211, 148);
+    align-content: center;
+    box-shadow: 10px 10px grey;
+    border-radius: 30px;
+  }
+code {
+    border: 1px solid black;
+    color: grey;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: whitesmoke;
+    
+}
+
+.display-4 {
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    color: rgb(61, 61, 43);
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+
+
+
+sample {
+    <em>Emphasized text</em><br>
+    <strong>Strong text</strong><br>
+    <code>A piece of computer code</code><br>
+    <samp>Sample output from a computer program</samp><br>
+    <kbd>Keyboard input</kbd><br>
+    <var>Variable</var>
+}

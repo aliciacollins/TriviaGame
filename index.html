@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="javascript" href="assets/javascript/app.js">
+</head>
+
+<body>
+
+
+    <div id="box">
+        <div class="container">
+            <h1 class="display-4">Keystroke Shortcuts Quiz</h1>
+
+            <button id="hide">hide1</button>
+            <button id="hide2">hide2</button>
+            <button id="show">show</button>
+            <button id="show2">show2</button>
+            <button onclick="returnScore()">View Results</button>
+
+            <hr>
+            <!-- QUESTION ONE -->
+            <!-- ------------------------------------------------------------------------------------ -->
+            <div class="container" id="set1">
+                <h6>Which keystrokes will move through open applications on the desktop?</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question0" value="A">
+                    <label class="form-check-label" for="inlineRadio1"><code>ctrl</code> + <code>tab</code></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question0" value="B">
+                    <label class="form-check-label" for="inlineRadio2"><code>shift</code> + <code>tab</code></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question0"  value="C">
+                    <label class="form-check-label" for="inlineRadio3"><code>window</code> + <code>tab</code></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question0" value="D">
+                    <label id="answer1" class="form-check-label" for="exampleCheck1"><code>alt</code> +<code>tab</code>
+                    </label>
+                </div>
+                <hr>
+
+                <!-- QUESTION TWO -->
+                <!-- ------------------------------------------------------------------------------------ -->
+                <br>
+                <h6> What does <code>ctrl</code> +<code>shift</code> +<code>t</code> do? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question1"  value="A">
+                    <label class="form-check-label" for="inlineRadio1">moves through open tabs in your browser.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name= "Question1" value="B">
+                    <label class="form-check-label" for="inlineRadio2">restores a tab that was closed</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question1" value="C">
+                    <label class="form-check-label" for="inlineRadio3">closes the current tab</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question1" value="D">
+                    <label class="form-check-label" for="inlineRadio4">answer not given</label>
+                </div>
+                <br>
+                <hr>
+
+                <!-- QUESTION THREE -->
+                <!-- ------------------------------------------------------------------------------------ -->
+                <h6> Which command will cycle through open browser tabs? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question3" value="A">
+                    <label class="form-check-label" for="inlineRadio1"><code>ctrl</code><code>tab</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question3"  value="B">
+                    <label class="form-check-label" for="inlineRadio2"></label><code>shift</code> +<code>tab</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question3"  value="C">
+                    <label class="form-check-label" for="inlineRadio3"><code>window</code> + <code>tab</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question3" value="D">
+                    <label class="form-check-label" for="exampleCheck1"><code>alt</code> + <code>tab</code>
+                    </label>
+                </div>
+                <br>
+                <hr>
+                <!-- QUESTION FOUR -->
+                <!-- 
+        ------------------------------------------------------------------------------------ -->
+
+                <h6> Which command will minimize all open windows and reveal the desktop? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question4" value="A">
+                    <label class="form-check-label" for="inlineRadio1"><code>ctrl</code> + <code>m</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question4"  value="B">
+                    <label class="form-check-label" for="inlineRadio2"><code>shift</code> + <code>m</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question4"  value="C">
+                    <label class="form-check-label" for="inlineRadio3"><code>window</code> + <code>m</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question4" id="inlineRadio4" value="D">
+                    <label class="form-check-label" for="exampleCheck1"><code>alt</code> + <code>m</code>
+                    </label>
+                </div>
+                <br>
+                <hr>
+            </div>
+            <!--  add hide feature here-->
+            <!-- QUESTION FIVE -->
+            <!-- ------------------------------------------------------------------------------------ -->
+            <div class="container" id="set2">
+                <h6> What command shortcut can you press to open and close the sidebar in VS code? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question5" value="A">
+                    <label class="form-check-label" for="inlineRadio1"><code>ctrl</code> +<code>b</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question5" value="B">
+                    <label class="form-check-label" for="inlineRadio2"><code>shift</code> +  <code>b</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question5" value="C">
+                    <label id="answer4" class="form-check-label" for="inlineRadio3"><code>window</code> + <code>b</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question5" value="D">
+                    <label class="form-check-label" for="exampleCheck1"><code>alt</code> + <code>b</code>
+                    </label>
+                </div>
+                <br>
+                <hr>
+
+                <!-- QUESTION SIX -->
+                <!-- ------------------------------------------------------------------------------------ -->
+                <h6> What does
+                    <code>ctrl</code> +
+                    <code>shift</code> +
+                    <code>e</code> do? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question6" value="A">
+                    <label class="form-check-label" for="inlineRadio1">Opens file explorer.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question6" value="B">
+                    <label id="answer6" class="form-check-label" for="inlineRadio2">opens file extensions</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question6" value="C">
+                    <label class="form-check-label" for="inlineRadio3">exits workspace</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question6" value="D">
+                    <label class="form-check-label" for="inlineRadio4">answer not given</label>
+                </div>
+                <br>
+                <hr>
+
+
+
+                <!-- QUESTION SEVEN -->
+                <!-- ------------------------------------------------------------------------------------ -->
+                <h6> What keystrokes can you press to hide (unfold) code in VS code? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question7" value="A">
+                    <label id="answer5" class="form-check-label" for="inlineRadio1"> <code>ctrl</code> + <code>shift</code> + <code>[</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question7" value="B">
+                    <label class="form-check-label" for="inlineRadio2"><code>ctrl</code> + <code>shift</code> +<code>]</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question7"  value="C">
+                    <label class="form-check-label" for="inlineRadio3"><code>ctrl</code> + <code>shift</code> + <code>{</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question7"  value="D">
+                    <label class="form-check-label" for="exampleCheck1"><code>ctrl</code> +
+                        <code>shift</code> +<code>}</code>
+                    </label>
+                </div>
+                <br>
+                <hr>
+                <!-- QUESTION EIGHT -->
+                <!-- ------------------------------------------------------------------------------------ -->
+                <h6> What keystrokes should you press in VS code to see all shortcut options? </h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question8" value="A">
+                    <label class="form-check-label" for="inlineRadio1"><code>ctrl</code> + <code>shift</code> + <code>s</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question8"  value="B">
+                    <label class="form-check-label" for="exampleCheck1"><code>ctrl</code> + <code>shift</code> + <code>p</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question8" value="C">
+                    <label class="form-check-label" for="inlineRadio3"><code>ctrl</code> + <code>shift</code> + <code>h</code>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Question8" value="D">
+                    <label class="form-check-label" for="exampleCheck1"><code>ctrl</code> + <code>shift</code> + <code>d</code>
+                    </label>
+                </div>
+                <br>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+     var answers = ["D","B","A","C","A","A","D","B"], 
+    tot = answers.length;
+    
+    function getCheckedValue( radioName ){
+    var radios = document.getElementsByName( radioName );
+    console.log("radioName",radioName); // Get radio group by-name
+    for(var y=0; y<radios.length; y++)
+      if(radios[y].checked) return radios[y].value; // return the checked value
+    
+    }
+    
+    function getScore(){
+    var score = 0;
+    for (var i=0; i<tot; i++)
+    if(getCheckedValue("Question"+i)===answers[i]) score += 1; // increment only
+    return score;
+    }
+    
+    function returnScore(){
+    alert("Your score is "+ getScore() +"/"+ tot);
+    }   
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("#set1").hide();
+            });
+            $("#hide2").click(function () {
+                $("#set2").hide();
+            });
+            $("#show").click(function () {
+                $("#set1").show();
+            });
+            $("#show2").click(function () {
+                $("#set2").show();
+            });
+        });
+
+      const myForm = document.getElementById("set2");
+      myForm.style.display = 'none';
+      setTimeout(() => {
+        myForm.style.display = 'block';
+      }, 60000);
+        
+        
+    </script>
+   
+
+
+</body>
+
+</html>
