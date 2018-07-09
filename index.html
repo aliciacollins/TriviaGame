@@ -18,12 +18,11 @@
     <div id="box">
         <div class="container">
             <h1 class="display-4">Keystroke Shortcuts Quiz</h1>
-
-            <button id="hide">hide1</button>
-            <button id="hide2">hide2</button>
-            <button id="show">show</button>
-            <button id="show2">show2</button>
-            <button onclick="returnScore()">View Results</button>
+            <div id ="clockBox">
+            <div>3 Minute Countdown</div> 
+            <hr>
+            <div id="clockdiv"></div>
+            </div>
 
             <hr>
             <!-- QUESTION ONE -->
@@ -231,59 +230,25 @@
                 </div>
                 <br>
                 <hr>
+                <button id = "submit" onclick="returnScore()">press to submit quiz</button>
             </div>
+            <div class="container">
+                    <h1><span id = "score"></span></h1>
+                   
+                    <hr>
+                </div>
+            <button id="hide">Press to continue</button> 
+               
         </div>
     </div>
 
+</script>
+jQuery
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+Script -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-     var answers = ["D","B","A","C","A","A","D","B"], 
-    tot = answers.length;
-    
-    function getCheckedValue( radioName ){
-    var radios = document.getElementsByName( radioName );
-    console.log("radioName",radioName); // Get radio group by-name
-    for(var y=0; y<radios.length; y++)
-      if(radios[y].checked) return radios[y].value; // return the checked value
-    
-    }
-    
-    function getScore(){
-    var score = 0;
-    for (var i=0; i<tot; i++)
-    if(getCheckedValue("Question"+i)===answers[i]) score += 1; // increment only
-    return score;
-    }
-    
-    function returnScore(){
-    alert("Your score is "+ getScore() +"/"+ tot);
-    }   
-        $(document).ready(function () {
-            $("#hide").click(function () {
-                $("#set1").hide();
-            });
-            $("#hide2").click(function () {
-                $("#set2").hide();
-            });
-            $("#show").click(function () {
-                $("#set1").show();
-            });
-            $("#show2").click(function () {
-                $("#set2").show();
-            });
-        });
-
-      const myForm = document.getElementById("set2");
-      myForm.style.display = 'none';
-      setTimeout(() => {
-        myForm.style.display = 'block';
-      }, 60000);
-        
-        
-    </script>
-   
 
 
 </body>

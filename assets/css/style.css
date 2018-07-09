@@ -33,14 +33,14 @@ code {
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
-
-
-
-sample {
-    <em>Emphasized text</em><br>
-    <strong>Strong text</strong><br>
-    <code>A piece of computer code</code><br>
-    <samp>Sample output from a computer program</samp><br>
-    <kbd>Keyboard input</kbd><br>
-    <var>Variable</var>
+#clockBox {
+    border: 1px solid black;
+    color:black;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: rgb(170, 162, 162);
+    width: 210px;
+    border-radius: 30px;
+    text-align: center;
+    margin: auto;
 }
