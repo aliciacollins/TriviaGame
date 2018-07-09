@@ -3,7 +3,8 @@
     $( "#set1" ).fadeIn( 1800 );
     $("#submit").hide();
     
-    var answers = ["D","B","A","C","A","A","D","B"], 
+//fix this not checking the answers right it goes again after question 7
+var answers = ["D","B","A","C","A","A","D","B"], 
 tot = answers.length;
 
 function getCheckedValue( radioName ){
@@ -22,7 +23,7 @@ return score;
 }
 
 function returnScore(){
-$("#score").text("You have completed the quiz you scored " + getScore() + " out of 8 points");
+$("#score").text("You have completed the quiz and scored " + getScore() + " out of 8 points");
 console.log("get score",getScore());
 $("#set1").hide();
 $("#set2").hide();
