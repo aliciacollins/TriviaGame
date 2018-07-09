@@ -18,7 +18,9 @@ for(var y=0; y<radios.length; y++)
 function getScore(){
 var score = 0;
 for (var i=0; i<tot; i++)
-if(getCheckedValue("Question"+i)===answers[i]) score += 1; // increment only
+if(getCheckedValue("Question"+i) === answers[i]) {
+	score += 1; 	
+} // increment only
 return score;
 }
 
